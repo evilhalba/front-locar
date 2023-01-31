@@ -1,23 +1,24 @@
-
-<v-btn x-small fab style="color: transparent" outlined
-       @click="edit(item)"
->
-  <icon-fy icon="mdi:note-edit-outline" width="25" height="25"
-           style="color: #FEB916; border-radius:3px; border: 2px solid #FEB916"
-           dense
-           class="mr-2"
-  />
-</v-btn>
-
+<template>
+  <v-btn
+      width="175px" height="40px"
+      style="background-color:antiquewhite; border:solid 1px #EB8712; color:#EB8712;"
+      @click="actionFunction"
+  >
+    <strong>{{content}}</strong>
+  </v-btn>
+</template>
 
 <script>
 export default {
   name: "ButtonComponent",
   props: {
-    edit: {
-      type: Function,
+    content: {
+      type: String,
+      default: "Insira"
     },
-    item:{}
+    actionFunction: {
+      type: Function
+    }
   }
 }
 </script>

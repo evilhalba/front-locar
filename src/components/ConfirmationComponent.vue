@@ -1,4 +1,4 @@
-<v-dialog v-model="model" max-width="500px">
+
   <template v-slot:[`hover.default`]="{hover}">
     <v-card max-width="640px"
             class="text-center rounded-lg roboto"
@@ -44,16 +44,12 @@
       </v-card-text>
     </v-card>
   </template>
-</v-dialog>
+
   <script>
     export default {
       //Recebe 4 props
       name: "ConfirmationComponent",
       props:{
-        model:{
-          type:Boolean,
-          default:false
-        },
         header:{
           type:String,
           default: "Cancelar Operação"
