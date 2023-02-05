@@ -15,42 +15,16 @@
                v-on="on"
         >
           <template>
-            <v-badge
-                     bordered
-                     bottom
-                     color="green accent-4"
-                     dot
-            >
-                <v-avatar>
-                  <v-img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png"></v-img>
-                </v-avatar>
-
-            </v-badge>
-
+            <v-avatar>
+              <v-img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png"></v-img>
+            </v-avatar>
           </template>
         </v-btn>
       </template>
       <v-list class="pa-0">
-        <v-list-item ripple="ripple" rel="noopener">
-          <v-list-item-content>
-            <v-list-item-title>Olá, {{}}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-
-      <v-list class="pa-0">
-        <v-list-item  ripple="ripple" rel="noopener" >
-          <v-list-item-icon>
-            <v-icon color="#336699">mdi-account-edit</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>Meus dados</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item ripple="ripple" rel="noopener">
-          <v-list-item-icon>
-            <v-icon color="#336699">mdi-logout</v-icon>
+        <v-list-item ripple="ripple" rel="noopener" style="cursor: pointer">
+          <v-list-item-icon class="mr-2">
+            <v-icon color="#336699">mdi-account-arrow-right-outline</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>Sair</v-list-item-title>

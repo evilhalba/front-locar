@@ -51,7 +51,7 @@
     </v-dialog>
 
     <v-dialog v-model="dialogRegistration" persistent max-width="600px" min-width="360px">
-      <registration-comp
+      <user-registration
           @cancel=" dialogRegistration = false"
       />
     </v-dialog>

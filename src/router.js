@@ -19,11 +19,6 @@ export default new Router({
             component : DashboardPage
         },
         {
-            path:'/dashboard',
-            name: 'DashboardPage',
-            component : DashboardPage
-        },
-        {
             path:'/vehicles',
             name: 'VehiclesPage',
             component : VehiclesPage

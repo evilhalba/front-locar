@@ -1,9 +1,9 @@
 <template>
   <v-card class="pa-4">
-    <v-card-title class="pa-0">
-      <strong>  Veículos </strong>
-    </v-card-title>
-
+    <btn-comp
+        content="Inserir Veículo"
+        :actionFunction="newVehicle"
+    />
       <v-text-field
           v-model="search"
           append-icon="mdi-magnify"
@@ -50,6 +50,11 @@
             :buttons="2"/>
       </v-dialog>
 
+      <v-dialog v-model="dialogRegistration" persistent max-width="600px" min-width="360px">
+        <vehicle-registration
+            @cancel=" dialogRegistration = false"
+        />
+      </v-dialog>
   </v-card>
 </template>
 
@@ -76,6 +81,7 @@ export default {
     vehicles:[],
     loadingTable: true,
     dialogDeleteVehicle: false,
+    dialogRegistration:false,
   }),
   created() {
     this.initialize();
@@ -105,7 +111,10 @@ export default {
 
     detailsItem(i){return i},
 
-    deleteItemConfirm(){this.$toast("Veículo excluído");}
+    deleteItemConfirm(){this.$toast("Veículo excluído");},
+    newVehicle(){
+      this.dialogRegistration = true;
+    }
   }
 }
 </script>

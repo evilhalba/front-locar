@@ -1,16 +1,10 @@
 <template>
 
-    <v-card>
-
-    </v-card>
-
 </template>
 
 <script>
-
 export default {
-  name: "DashboardPage",
-
+  name: "HomeClient"
 }
 </script>
 
