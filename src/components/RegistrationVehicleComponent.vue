@@ -79,6 +79,42 @@
                 ></v-select>
               </v-col>
             </v-row>
+            <v-row>
+              <v-col cols="6" class="pl-0">
+                <v-select
+                    label="Cor"
+                    solo
+                    required
+                    :rules="[rules.required]"
+                ></v-select>
+              </v-col>
+              <v-col cols="6" class="pr-0">
+                <v-select
+                    label="Combustível"
+                    solo
+                    required
+                    :rules="[rules.required]"
+                ></v-select>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="6" class="pl-0">
+                <v-select
+                    label="Modelo"
+                    solo
+                    required
+                    :rules="[rules.required]"
+                ></v-select>
+              </v-col>
+              <v-col cols="6" class="pr-0">
+                <v-select
+                    label="Versão"
+                    solo
+                    required
+                    :rules="[rules.required]"
+                ></v-select>
+              </v-col>
+            </v-row>
           </v-col>
         </v-container>
       </v-card-text>

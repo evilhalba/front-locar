@@ -20,6 +20,8 @@ Vue.component('user-registration', require('./components/RegistrationUserCompone
 Vue.component('vehicle-registration', require('./components/RegistrationVehicleComponent.vue').default);
 Vue.component('card-dashboard', require('./components/DashboardCardComponent.vue').default);
 Vue.component('date-comp', require('./components/DateComponent.vue').default);
+Vue.component('vehicle-composer', require('./components/VehiclesComposerDialog.vue').default);
+
 
 
 Vue.config.productionTip = false

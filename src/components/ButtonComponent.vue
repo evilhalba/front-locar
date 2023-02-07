@@ -1,7 +1,7 @@
 <template>
   <v-btn
-      width="175px" height="40px"
-      style="background-color:antiquewhite; border:solid 1px #EB8712; color:#EB8712;"
+      width="width" height="40px"
+      style="background-color:antiquewhite; border:solid 1px #EB8712; color:#EB8712; font-size: 12px"
       @click="actionFunction"
   >
     <strong>{{content}}</strong>
@@ -18,6 +18,9 @@ export default {
     },
     actionFunction: {
       type: Function
+    },
+    width:{
+      default: 175
     }
   }
 }
